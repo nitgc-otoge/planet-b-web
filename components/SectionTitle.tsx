@@ -6,7 +6,7 @@ export function SectionTitle(props: {
 }) {
   return (
     <div {...props}>
-      <div class="text-xl font-semibold">{props.title}</div>
+      <div class="text-2xl font-semibold">{props.title}</div>
       <div>{props.subTitle}</div>
     </div>
   );
