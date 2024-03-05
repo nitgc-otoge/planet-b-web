@@ -1,7 +1,13 @@
 type WorkItem = {
   title: string,
   description: string,
+  category: 'BMS' | 'Music'
   date: string,
+  images?: string[],
+  credits: {
+    name: string,
+    role: string
+  }[],
   url: {
     venue?: string,
     dl: string,
@@ -17,7 +23,8 @@ type WorkItem = {
     }
   },
   files: {
-    category: string,
+    trackNo?: number,
+    genre?: string,
     title: string,
     credits: {
       name: string,

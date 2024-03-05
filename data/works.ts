@@ -4,18 +4,26 @@ export const items: WorkItem[] = [
   {
     title: "Empty Planet",
     date: "2020-07-07",
-    description: "PLANET-Bのメンバーによる初のEP。",
+    description: "PLANET-Bのメンバーによるオリジナル曲を集めたEP。",
+    category: 'Music',
     url: {
       dl: "https://aoi-wakusei.bandcamp.com/album/empty-planet"
     },
+    images: ['jacket_empty.jpg'],
     embed: {
       bandcamp: {
         id: "4240606146"
       }
     },
+    credits: [
+      { name: "snowsphere", role: "produce" },
+      { name: "haco", role: "compose" },
+      { name: "waya", role: 'compose' },
+      { name: "みゆりん", role: 'illustration' },
+    ],
     files: [
       {
-        category: "Music",
+        trackNo: 1,
         title: "Implicit World",
         credits: [
           {
@@ -25,7 +33,7 @@ export const items: WorkItem[] = [
         ],
       },
       {
-        category: "Music",
+        trackNo: 2,
         title: "目目",
         credits: [
           {
@@ -35,7 +43,7 @@ export const items: WorkItem[] = [
         ],
       },
       {
-        category: "Music",
+        trackNo: 3,
         title: "Sprint Strings",
         credits: [
           {
@@ -45,7 +53,7 @@ export const items: WorkItem[] = [
         ],
       },
       {
-        category: "Music",
+        trackNo: 4,
         title: "ill",
         credits: [
           {
@@ -60,16 +68,20 @@ export const items: WorkItem[] = [
     title: "archive_001",
     date: "2019-08-09",
     description: "これまでのBMS作品から2曲をノンストップMIXとして制作したネタ作品。",
+    category: 'BMS',
     url: {
-      dl: "https://example.com"
+      dl: "https://mega.nz/file/PS5BHSwY#xeTRc5u8H4v0Eg_F6bV5dDQwHGab40TFBpL2g05ut_c"
     },
+    credits: [
+      { name: "snowsphere", role: "produce" }
+    ],
     files: [
       {
-        category: "Music",
         title: "archive_001",
+        genre: "MIXED",
         credits: [
           {
-            name: "PLANET-B",
+            name: "PLANET-B (mixed by snowsphere)",
             role: ""
           }
         ],
@@ -77,12 +89,42 @@ export const items: WorkItem[] = [
     ] 
   },
   {
+    title: "poq",
+    date: "2019-10-17",
+    description: "PLANET-Bによるオリジナル音楽ゲーム。ゲーム本体はUnityとC#で制作し、照光式の押しボタンを組み合わせた専用のコントローラも同時に制作した。(未リリース)",
+    category: 'Game',
+    credits: [
+      { name: "snowsphere", role: "produce" },
+      { name: "じゅん", role: "development" },
+      { name: "yaharito", role: "development" },
+      { name: "maki", role: "development" },
+      { name: "maki", role: "development" },
+    ],
+    url: {},
+    files: []
+  },
+  {
     title: "BMS衆議院選",
-    date: "2021-01-01",
+    date: "2019-06-24",
+    description: "PLANET-Bメンバーと外部のBMS作家によって「鉄党」を結成し出馬したイベント。党として提出した作品数が足りず、無所属での参加となった。",
+    category: 'BMS',
+    url: {
+      venue: "https://venue.bmssearch.net/bmsshuin2",
+      dl: "https://example.com"
+    },
+    credits: [
+      { name: "snowsphere", role: "compose" },
+      { name: "DENEB", role: "compose" },
+      { name: "TNT1964", role: "lyric" },
+      { name: "rokuYa", role: "voice" },
+      { name: "akom", role: "chart" },
+      { name: "じゅん", role: "web" },
+      { name: "はなえ", role: "web" }
+    ],
     files: [
       {
-        category: "BMS",
-        title: "[TECHNO] Fluctuation",
+        genre: "TECHNO",
+        title: "Fluctuation",
         credits: [
           {
             name: "Electro Controller",
@@ -101,31 +143,44 @@ export const items: WorkItem[] = [
             role: "voice"
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[PARTY] 開き直ってパーティしようぜ！",
+        title: "開き直ってパーティしようぜ！",
+        genre: "PARTY",
         credits: [
           {
             name: "DENEB",
-            role: ""
+            role: "compose"
           },
           {
             name: "akom",
             role: "chart"
           }
         ],
-        url: "https://example.com"
       },
     ]
   },
   {
     title: "PLANET-B 2018",
-    date: "2021-01-01",
+    date: "2018-10-26",
+    description: "G2R2018での参加楽曲に他メンバーの楽曲を加えたミニアルバム。同時期に行われた某文化祭ではCDでの配布も行った。",
+    category: 'Music',
+    url: {
+      dl: "https://mega.nz/file/3bxElSgB#liEDCSSf04hlxqDYr5kNixM9P7zlD8AqClGeDbClf8Q"
+    },
+    images: ['jacket_2018.png'],
+    credits: [
+      { name: "snowsphere", role: "compose, design" },
+      { name: "DENEB", role: "compose" },
+      { name: "akom", role: "compose" },
+      { name: "maki", role: "compose" },
+      { name: "MARIMO", role: "compose" },
+      { name: "じゅん", role: "web" },
+      { name: "はなえ", role: "web" }
+    ],
     files: [
       {
-        category: "Music",
+        trackNo: 1,
         title: "Dr. Darker",
         credits: [
           {
@@ -133,21 +188,19 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 2,
         title: "namasute",
         credits: [
           {
             name: "maki",
             role: ""
           }
-        ],
-        url: "https://example.com"
+        ]
       },
       {
-        category: "Music",
+        trackNo: 3,
         title: "night bird",
         credits: [
           {
@@ -155,10 +208,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 4,
         title: "hello_world",
         credits: [
           {
@@ -166,10 +218,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 5,
         title: "Holy Code",
         credits: [
           {
@@ -177,60 +228,80 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       }
     ] 
   },
   {
     title: "G2R2018",
-    date: "2021-01-01",
+    date: "2018-10-26",
+    description: "PLANET-Bとして参加した最初のBMSイベント。",
+    category: "BMS",
+    url: {
+      venue: "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=48&event=123",
+      dl: "https://mega.nz/file/7G5iyKQB#KuKvGSyoKSCs4xymfIZ8VaJMs1ObKVXAIJjUlpK2N1g"
+    },
+    credits: [
+      { name: "snowsphere", role: "compose, design" },
+      { name: "DENEB", role: "compose" },
+      { name: "akom", role: "compose, chart" },
+      { name: "maki", role: "compose" },
+      { name: "MARIMO", role: "compose" },
+      { name: "じゅん", role: "web" },
+      { name: "はなえ", role: "web" }
+    ],
     files: [
       {
-        category: "BMS",
-        title: "[TECHNO] hello_world",
+        title: "hello_world",
+        genre: "TECHNO",
         credits: [
           {
             name: "snowsphere",
-            role: "role"
+            role: ""
           },
-          {
-            name: "akom",
-            role: "chart(ANOTHER)"
-          }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[INDO] namasute",
+        title: "namasute",
+        genre: "INDO",
         credits: [
           {
             name: "maki",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[POP CHORD] Holy Code",
+        title: "Holy Code",
+        genre: "POP CHORD",
         credits: [
           {
             name: "akom",
             role: ""
           }
         ],
-        url: "https://example.com"
       }
     ]
   },
   {
     title: "PLANET-B STAGE2",
-    date: "2021-01-01",
+    date: "2018-09-08",
+    description: "PLANET-BメンバーによるオリジナルBMS第2弾。BMSとOSTを配布。",
+    category: "BMS",
+    images: ['jacket_stage2.png'],
+    credits: [
+      { name: "snowsphere", role: "compose, design" },
+      { name: "maki", role: "compose" },
+      { name: "こけ(ただれ)", role: "compose" },
+      { name: "MARIMO", role: "compose" },
+      { name: "DENEB", role: "compose" },
+    ],
+    url: {
+      dl: "https://mega.nz/file/jfw2CQoI#qeTt8YEvvZ54idpgk1p6ZWhIaldZVfHY8cL87T8EDaQ" 
+    },
     files: [
       {
-        category: "BMS",
-        title: "[] Prison Party",
+        title: "Prison Party",
+        genre: "mini Techno",
         credits: [
           {
             name: "DENEB",
@@ -241,104 +312,144 @@ export const items: WorkItem[] = [
             role: "chart(ANOTHER)"
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] Tripping",
+        title: "Tripping",
+        genre: "Hardstep",
         credits: [
           {
             name: "こけ(ただれ)",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] Star Rise",
+        title: "Star Rise",
+        genre: "特急「スターライズ1号」",
         credits: [
           {
             name: "maki",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] daybreak",
+        title: "daybreak",
+        genre: "Nostagix",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] sinkai",
+        title: "sinkai",
+        genre: "Underground",
         credits: [
           {
             name: "MARIMO",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] Prison Master",
+        title: "Prison Master",
+        genre: "",
         credits: [
           {
             name: "DENEB",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[NEU MUSIC] kurage",
+        title: "kurage",
+        genre: "Neu Music",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
-        title: "[] Beta",
+        title: "Beta",
+        genre: "TRANCE",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-        url: "https://example.com"
+      }
+    ]
+  },
+  {
+    title: "kurage",
+    date: "2018-08-08",
+    description: "VTuber 海月ねう(をとは)氏をイメージし制作。当時、配信等で利用できる楽曲を募集していたため応募するために制作したが...",
+    category: "Music",
+    url: {
+      dl: "https://mega.nz/file/qfB0gaiZ#ZETbt9YIQXcqURzJS-KgGxdhxuN0lQ8G-LMBIJxhk-s"
+    },
+    images: ['jacket_kurage.png'],
+    credits: [
+      { name: "snowsphere", role: "compose, design" },
+    ],
+    files: [
+      {
+        trackNo: 1,
+        title: "kurage",
+        credits: [
+          {
+            name: "snowsphere",
+            role: ""
+          }
+        ],
+      },
+      {
+        trackNo: 2,
+        title: "Fuwari",
+        credits: [
+          {
+            name: "snowsphere",
+            role: ""
+          }
+        ],
       }
     ]
   },
   {
     title: "SAKURA*2 REMIXES EP",
-    date: "2021-01-01",
+    date: "2018-05-15",
+    description: "新規メンバーを迎えて初めて作成したEP。さくらさくらをリミックスの題材とし音楽やDTMの基礎知識を身に着ける目的で企画し制作した。",
+    url: {
+      dl: "https://mega.nz/file/zaRS0YxA#VGY6uRf-Sg6W12oo8ebsMQoYkRDa2YiWxHtpd5ECHi0"
+    },
+    images: ['jacket_sakura.jpg'],
+    category: 'Music',
+    credits: [
+      { name: "snowsphere", role: "compose, design" },
+      { name: "maki", role: "compose" },
+      { name: "じゅん", role: "compose" },
+      { name: "TNT", role: "compose" },
+      { name: "MARIMO", role: "compose" },
+      { name: "こけ(ただれ)", role: "compose" },
+    ],
     files: [
       {
-        category: "Music",
+        trackNo: 1,
         title: "神秘的な何か",
         credits: [
           {
             name: "maki",
-            role: "role"
+            role: ""
           },
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 2,
         title: "電子ノサクラ(short ver.)",
         credits: [
           {
@@ -346,10 +457,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 3,
         title: "桜閣",
         credits: [
           {
@@ -357,10 +467,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 4,
         title: "古流の花",
         credits: [
           {
@@ -368,10 +477,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 5,
         title: "EDM SAKURA EDM",
         credits: [
           {
@@ -379,10 +487,9 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "Music",
+        trackNo: 6,
         title: "Yozakura (UnDeRgRoUnD)",
         credits: [
           {
@@ -390,108 +497,182 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-        url: "https://example.com"
       }
     ]
   },
   {
     title: "PLANET-B STAGE1",
-    date: "2021-01-01",
+    date: "2018-02-01",
+    category: 'BMS',
+    description: "PLANET-Bとして初めて公開した作品群。当初はBMSとOST、LR2のスキンも含めて配布する予定だったが、時間の都合で最終的にはBMSとOSTの配布のみとなった。",
+    url: {
+      dl: "https://mega.nz/file/uKI0kI4L#CgaXlAOQFmKrDPMk7VypfsPbfpSe8TQtrbveC9uor-U"
+    },
+    images: [
+      'jacket_stage1.png'
+    ],
+    credits: [
+      { name: "snowsphere", role: "compose" },
+      { name: "TNT", role: "compose" },
+      { name: "akom", role: "compose, movie" },
+      { name: "ヤマキ", role: "compose" },
+    ],
     files: [
       {
-        category: "BMS",
-        title: "[] Alpha",
+        title: "Alpha",
+        genre: "Lite Liquid Funk",
         credits: [
           {
             name: "snowsphere",
             role: "role"
           },
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] Cosmos dream",
+        title: "Cosmos dream",
+        genre: "Space",
         credits: [
           {
             name: "TNT",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] space party!",
+        title: "space party!",
+        genre: "Beat",
         credits: [
           {
             name: "akom",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[ELECTRONICA] bathyscaphe",
+        title: "bathyscaphe",
+        genre: "Electronica",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] One planet end",
+        title: "One planet end",
         credits: [
           {
             name: "ヤマキ",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] ice code (Prototype)",
+        title: "ice code (Prototype)",
+        genre: "Happy Hardcore",
         credits: [
           {
             name: "akom",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
       {
-        category: "BMS",
-        title: "[] hard rush!",
+        title: "hard rush!",
+        genre: "Hardcore",
         credits: [
           {
             name: "akom",
             role: ""
           }
         ],
-        url: "https://example.com"
       }
     ]
   },
   {
-    title: "Starting!",
-    date: "2021-01-01",
+    title: "StartinG!",
+    date: "2016-11-01",
+    category: 'Music',
+    description: "PLANET-Bとして活動する前の作品。CD版とDL版の両方を用意し、CD版は某文化祭で配布。",
+    url: {
+      dl: "https://mega.nz/file/zWBgACbD#XA6GJ1K-TjIzSITWPfNvkfSn6_98yst5Z_2BvaxBllk"
+    },
+    images: [
+      'jacket_starting.jpg',
+      'tracklist_starting.jpg'
+    ],
+    embed: {
+      soundcloud: {
+        type: 'track',
+        setId: "282083732",
+        albumId: "starting-xross-fade-demo",
+        albumName: "StartinG!"
+      }
+    },
+    credits: [
+      { name: "snowsphere", role: "compose" },
+      { name: "こけ (haco)", role: "compose" },
+      { name: "NEDUHC (akom)", role: "compose" },
+      { name: "n00b", role: "compose" }
+    ],
     files: [
       {
-        category: "Music",
-        title: "daybreak at shrine",
+        trackNo: 1,
+        title: "daybreak at Shrine",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-        url: "https://example.com"
       },
+      {
+        trackNo: 2,
+        title: "Toy box",
+        credits: [
+          {
+            name: "こけ",
+            role: ""
+          }
+        ]
+      },
+      {
+        trackNo: 3,
+        title: "good night",
+        credits: [
+          {
+            name: "NEDUHC",
+            role: ""
+          }
+        ],
+      },
+      {
+        trackNo: 4,
+        title: "UMD CityWalk",
+        credits: [
+          { name: "n00b", role: "" }
+        ]
+      },
+      {
+        trackNo: 5,
+        title: "Halka + Renka mega mix (DL only track)",
+        credits: [
+          {
+            name: "Jewel Kiss remixed by snowsphere",
+            role: ""
+          }
+        ]
+      },
+      {
+        trackNo: 5,
+        title: "PPAP (CD only track)",
+        credits: [
+          {
+            name: "snowsphere",
+            role: ""
+          }
+        ]
+      }
     ]
   }
 ]

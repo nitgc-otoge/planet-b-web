@@ -7,7 +7,7 @@ import { WorkList } from "../components/WorkList/Index.tsx";
 export default function Home() {
   const count = useSignal(3);
   return (
-    <div class="text-neutral-700">
+    <div>
       <div class="my-4">
         <h1 class="text-3xl font-semibold">PLANET-B</h1>
       </div>
@@ -21,13 +21,13 @@ export default function Home() {
         </Description>
       </section>
       <section class="mt-8">
+        <SectionTitle title="Members"></SectionTitle>
+        <Description class="mt-4">snowsphere, haco, akom, TNT, ヤマキ, MARIMO, DENEB, yaharito, maki, じゅん, はなえ, rokuYa, waya</Description>
+      </section>
+      <section class="mt-8">
         <SectionTitle title="Works" sub-title="Click to download contents." />
         <Description></Description>
         <WorkList></WorkList>
-      </section>
-      <section class="mt-8">
-        <SectionTitle title="Members"></SectionTitle>
-        <Description class="mt-4">snowsphere, haco, akom, TNT, ヤマキ, MARIMO, DENEB, maki, じゅん, はなえ, rokuYa, waya</Description>
       </section>
     </div>
   );
