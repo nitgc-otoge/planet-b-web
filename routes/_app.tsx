@@ -1,5 +1,5 @@
 import { type PageProps } from "$fresh/server.ts";
-import { assets } from "$fresh/runtime.ts";
+import { asset } from "$fresh/runtime.ts";
 
 export default function App({ Component }: PageProps) {
   return (
@@ -12,12 +12,12 @@ export default function App({ Component }: PageProps) {
         <meta property="og:url" content="https://pb.prismistim.com/" />
         <meta property="og:title" content="PLANET-B" />
         <meta property="og:description" content="PLANET-B Web Site" />
-        <meta property="og:image" content={assets("/images/aoi_wakusei.jpg")} />
+        <meta property="og:image" content={asset("/images/aoi_wakusei.jpg")} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content="https://pb.prismistim.com/" />
         <meta property="twitter:title" content="PLANET-B" />
         <meta property="twitter:description" content="PLANET-B Web Site" />
-        <meta property="twitter:image" content={assets("/images/aoi_wakusei.jpg")} />
+        <meta property="twitter:image" content={asset("/images/aoi_wakusei.jpg")} />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
