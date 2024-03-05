@@ -31,17 +31,17 @@ export function Item(props: {
       <div class="mt-4 font-semibold">Track List</div>
       <div class="mt-2 text-left text-sm">
         {props.data.files.map((file) => (
-            <div class="flex w-full items-center space-x-2">
-              {props.data.category === 'Music' ? <div class="">{file.trackNo}.</div> : file.genre ? <div>[{file.genre}]</div> : ''}
-              <div class="py-1 flex-initial">
-                {file.credits.map((credit, index) => (
-                  <span>{credit.name}{credit.role !== '' ? <span>({credit.role})</span> : ''}{file.credits.length - 1 !== index ? <span>,&nbsp;</span> : ''}</span>
-                ))}
-              </div>
-              <div>-</div>
-              <div class="py-1 flex-1">{file.title}</div>
+          <div class="flex flex-wrap w-full items-center space-x-2">
+            {props.data.category === 'Music' ? <div class="">{file.trackNo}.</div> : file.genre ? <div>[{file.genre}]</div> : ''}
+            <div class="py-1 flex-initial">
+              {file.credits.map((credit, index) => (
+                <span>{credit.name}{credit.role !== '' ? <span>({credit.role})</span> : ''}{file.credits.length - 1 !== index ? <span>,&nbsp;</span> : ''}</span>
+              ))}
             </div>
-          ))}
+            <div>-</div>
+            <div class="py-1 flex-1">{file.title}</div>
+          </div>
+        ))}
       </div>
       <div class="mt-4 font-semibold">Credits</div>
       <div class="mt-2 flex flex-wrap space-x-1 text-sm">

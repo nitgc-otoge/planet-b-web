@@ -1,11 +1,8 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
 import { SectionTitle } from "../components/SectionTitle.tsx";
 import { Description } from "../components/Descrtiption.tsx";
 import { WorkList } from "../components/WorkList/Index.tsx";
 
 export default function Home() {
-  const count = useSignal(3);
   return (
     <div>
       <div class="my-4">
@@ -15,9 +12,6 @@ export default function Home() {
         <SectionTitle title="About 'PLANET-B'" />
         <Description class="mt-2">
           PLANET-B とは、とある音楽ゲーム好きの高専生らによって構成された創作活動チームです。
-        </Description>
-        <Description class="mt-2">
-          PLANET-B is a team consisting of National Institute of Technology students and music video game lovers.
         </Description>
       </section>
       <section class="mt-8">
