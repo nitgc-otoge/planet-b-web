@@ -16,9 +16,11 @@ export function Item(props: {
         {props.data.url.venue ? <Button href={props.data.url.venue}>Venue</Button> : '' }
         {props.data.url.dl ? <Button href={props.data.url.dl}>Download</Button> : '' }
       </div>
-      <div class="flex flex-wrap space-x-2">
+      <div class="flex flex-wrap gap-2">
         {props.data.images ? props.data.images.map((image) => (
-          <img src={asset(`/images/${image}`)} class="mt-4 w-48" />
+          <a href={`/images/${image}`} target="_blank">
+            <img src={asset(`/images/${image}`)} class="mt-4 w-48" />
+          </a>
         )) : ''}
       </div>
       {/* {props.data.embed ? <div class="mt-4">
@@ -28,23 +30,23 @@ export function Item(props: {
           <BandcampEmbedPlayer id={props.data.embed.bandcamp.id}></BandcampEmbedPlayer> : ''
         }
       </div> : ''} */}
-      <div class="mt-4 font-semibold">Track List</div>
-      <div class="mt-2 text-left text-sm">
+      {props.data.files.length > 0 ? <div class="mt-4 font-semibold">Track List</div> : ""}
+      <div class="mt-2 text-left text-sm overflow-auto">
         {props.data.files.map((file) => (
-          <div class="flex flex-wrap w-full items-center space-x-2">
-            {props.data.category === 'Music' ? <div class="">{file.trackNo}.</div> : file.genre ? <div>[{file.genre}]</div> : ''}
-            <div class="py-1 flex-initial">
+          <div class="flex flex-nowrap items-center gap-2">
+            {props.data.category === 'Music' ? <div class="">{file.trackNo}.</div> : file.genre ? <div class="flex-none">[{file.genre}]</div> : ''}
+            <div class="py-1 flex-none">
               {file.credits.map((credit, index) => (
                 <span>{credit.name}{credit.role !== '' ? <span>({credit.role})</span> : ''}{file.credits.length - 1 !== index ? <span>,&nbsp;</span> : ''}</span>
               ))}
             </div>
             <div>-</div>
-            <div class="py-1 flex-1">{file.title}</div>
+            <div class="py-1 flex-none">{file.title}</div>
           </div>
         ))}
       </div>
       <div class="mt-4 font-semibold">Credits</div>
-      <div class="mt-2 flex flex-wrap space-x-1 text-sm">
+      <div class="mt-2 flex flex-wrap gap-2 text-sm">
         {props.data.credits.map((item, index) => {
           return (
             <div>
