@@ -12,7 +12,7 @@ export default function App({ Component }: PageProps) {
         <meta property="og:url" content="https://pb.prismistim.com/" />
         <meta property="og:title" content="PLANET-B" />
         <meta property="og:description" content="PLANET-B Web Site" />
-        <meta property="og:image" content={asset("/images/aoi_wakusei.jpg")} />
+        <meta property="og:image" content="/images/aoi_wakusei.jpg" />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content="https://pb.prismistim.com/" />
         <meta property="twitter:title" content="PLANET-B" />

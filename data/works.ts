@@ -93,18 +93,22 @@ export const items: WorkItem[] = [
     date: "2019-10-17",
     description: "PLANET-Bによるオリジナル音楽ゲーム。ゲーム本体はUnityとC#で制作し、照光式の押しボタンを組み合わせた専用のコントローラも同時に制作した。(未リリース)",
     category: 'Game',
+    images: [
+      'poq_screenshot.png', 'poq_controller.png'
+    ],
     credits: [
       { name: "snowsphere", role: "produce" },
       { name: "じゅん", role: "development" },
       { name: "yaharito", role: "development" },
+      { name: "nshi", role: "development" },
       { name: "maki", role: "development" },
-      { name: "maki", role: "development" },
+      { name: "DENEB", role: "composer" },
     ],
     url: {},
     files: []
   },
   {
-    title: "BMS衆議院選",
+    title: "第二回 BMS衆議院選",
     date: "2019-06-24",
     description: "PLANET-Bメンバーと外部のBMS作家によって「鉄党」を結成し出馬したイベント。党として提出した作品数が足りず、無所属での参加となった。",
     category: 'BMS',
@@ -112,6 +116,7 @@ export const items: WorkItem[] = [
       venue: "https://venue.bmssearch.net/bmsshuin2",
       dl: "https://example.com"
     },
+    images: ['bmsshuin_poster.png'],
     credits: [
       { name: "snowsphere", role: "compose" },
       { name: "DENEB", role: "compose" },
@@ -305,7 +310,7 @@ export const items: WorkItem[] = [
         credits: [
           {
             name: "DENEB",
-            role: "role"
+            role: ""
           },
           {
             name: "akom",
@@ -524,7 +529,7 @@ export const items: WorkItem[] = [
         credits: [
           {
             name: "snowsphere",
-            role: "role"
+            role: ""
           },
         ],
       },
@@ -559,15 +564,6 @@ export const items: WorkItem[] = [
         ],
       },
       {
-        title: "One planet end",
-        credits: [
-          {
-            name: "ヤマキ",
-            role: ""
-          }
-        ],
-      },
-      {
         title: "ice code (Prototype)",
         genre: "Happy Hardcore",
         credits: [
@@ -586,7 +582,16 @@ export const items: WorkItem[] = [
             role: ""
           }
         ],
-      }
+      },
+      {
+        title: "One planet end",
+        credits: [
+          {
+            name: "ヤマキ",
+            role: ""
+          }
+        ],
+      },
     ]
   },
   {
