@@ -1,8 +1,7 @@
 import { JSX } from "preact";
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import { router } from "$fresh/src/server/router.ts";
 
-export function Button(props: {
+export function LinkBtn(props: {
   children: JSX.Element | string,
   onClick?: () => void,
   disabled?: boolean,

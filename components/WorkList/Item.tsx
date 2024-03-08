@@ -1,7 +1,7 @@
 import type { WorkItem } from "../../types/workItem.ts"
 import { SoundCloudEmbed } from '../SoundCloudEmbed.tsx'
 import { BandcampEmbedPlayer } from "../BandcampEmbedPlayer.tsx";
-import { Button } from "../Button.tsx";
+import { LinkBtn } from "../LinkBtn.tsx";
 import { asset } from "$fresh/runtime.ts";
 
 export function Item(props: {
@@ -13,8 +13,8 @@ export function Item(props: {
       <div class="mt-2 text-xl font-semibold">{props.data.title}</div>
       <p class="mt-2">{props.data.description}</p>
       <div class="mt-4 flex space-x-2">
-        {props.data.url.venue ? <Button href={props.data.url.venue}>Venue</Button> : '' }
-        {props.data.url.dl ? <Button href={props.data.url.dl}>Download</Button> : '' }
+        {props.data.url.venue ? <LinkBtn href={props.data.url.venue}>Venue</LinkBtn> : '' }
+        {props.data.url.dl ? <LinkBtn href={props.data.url.dl}>Download</LinkBtn> : '' }
       </div>
       <div class="flex flex-wrap gap-2">
         {props.data.images ? props.data.images.map((image) => (

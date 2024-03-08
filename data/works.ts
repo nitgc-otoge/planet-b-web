@@ -4,7 +4,7 @@ export const items: WorkItem[] = [
   {
     title: "Empty Planet",
     date: "2020-07-07",
-    description: "PLANET-Bのメンバーによるオリジナル曲を集めたEP。",
+    description: "PLANET-Bのメンバーによるオリジナル曲を集めたEP。bandcampにて公開中。",
     category: 'Music',
     url: {
       dl: "https://aoi-wakusei.bandcamp.com/album/empty-planet"
@@ -359,16 +359,6 @@ export const items: WorkItem[] = [
         ],
       },
       {
-        title: "Prison Master",
-        genre: "",
-        credits: [
-          {
-            name: "DENEB",
-            role: ""
-          }
-        ],
-      },
-      {
         title: "kurage",
         genre: "Neu Music",
         credits: [
@@ -380,14 +370,24 @@ export const items: WorkItem[] = [
       },
       {
         title: "Beta",
-        genre: "TRANCE",
+        genre: "Trance",
         credits: [
           {
             name: "snowsphere",
             role: ""
           }
         ],
-      }
+      },
+      {
+        title: "Prison Master",
+        genre: "",
+        credits: [
+          {
+            name: "DENEB",
+            role: ""
+          }
+        ],
+      },
     ]
   },
   {
