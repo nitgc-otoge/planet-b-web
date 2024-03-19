@@ -2,10 +2,12 @@ import { SectionTitle } from "../components/SectionTitle.tsx";
 import { Description } from "../components/Descrtiption.tsx";
 import { WorkList } from "../components/WorkList/Index.tsx";
 import { LinkList } from "../components/LinkList.tsx";
+import { GitHubRibbon } from "../components/GitHubRibbon.tsx";
 
 export default function Home() {
   return (
     <div>
+      <GitHubRibbon></GitHubRibbon>
       <div class="my-4">
         <img src="/logo.svg" class="w-24"></img>
       </div>
